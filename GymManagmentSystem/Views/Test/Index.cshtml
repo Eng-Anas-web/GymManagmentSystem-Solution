@@ -1,0 +1,22 @@
+﻿@{
+    string title_page = "Anas Ebrahim";
+    int age = 20;
+    List<int> num = new List<int> { 1, 2, 3, 4, 5 };
+}
+
+
+
+
+<html>
+
+    <head>
+        <title>@title_page</title>
+    </head>
+    <body>
+        <h2>@(age+1)</h2>
+    @foreach(int n in num)
+        {
+            <h3>numbers:@n</h3>
+        }
+    </body>
+</html>
